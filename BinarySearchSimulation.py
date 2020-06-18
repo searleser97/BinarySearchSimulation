@@ -29,11 +29,11 @@ def clearRange(arr, left, right):
 
 
 arr = ["  "]
-arr += list(map(int, "10 10 20 20 20 40 500".split()))
+arr += list(map(int, "10 10 20 20 20 20 40 50 50 100".split()))
 # arr = list(map(int, input().split()))
 arr += ["  "]
 
-target = 0
+target = 20
 # target = int(input())
 
 print()
@@ -68,7 +68,7 @@ printListWithSpaces(arr, left, leftPointerColor)
 printList(arr, mid, middleColor)
 printListWithSpaces(arr, right, rightPointerColor)
 print()
-print("=" * 25, "FIN", "=" * 25)
+print("=" * 25, "END", "=" * 25)
 print()
 print(leftPointerColor + "  " + endColor + " Left:", left)
 print()
