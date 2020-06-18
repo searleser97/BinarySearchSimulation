@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from binarysearchsimulation.Simulation import Simulation
+from binarysearchsimulation import Simulation
 
 
 def main():
