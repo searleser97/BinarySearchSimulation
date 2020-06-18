@@ -1,13 +1,12 @@
 middleColor = "\033[48;5;196m\033[38;5;15m"  # red
-endColor = "\033[0m"
-
 leftPointerColor = "\033[48;5;27m\033[38;5;15m"  # blue
 rightPointerColor = "\033[48;5;13m\033[38;5;15m"  # pink
+endColoring = "\033[0m"
 
 
 def printList(arr, pos, color):
     mylist = arr.copy()
-    mylist[pos] = color + str(mylist[pos]) + endColor
+    mylist[pos] = color + str(mylist[pos]) + endColoring
     for i in range(len(mylist)):
         print(str(mylist[i]) + " \n"[1 if i + 1 == len(mylist) else 0], end="")
 
@@ -70,8 +69,8 @@ printListWithSpaces(arr, right, rightPointerColor)
 print()
 print("=" * 25, "END", "=" * 25)
 print()
-print(leftPointerColor + "  " + endColor + " Left:", left)
+print(leftPointerColor + "  " + endColoring + " Left:", left)
 print()
-print(rightPointerColor + "  " + endColor + " Right:", right)
+print(rightPointerColor + "  " + endColoring + " Right:", right)
 print()
 print()
