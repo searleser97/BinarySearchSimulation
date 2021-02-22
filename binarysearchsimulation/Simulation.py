@@ -30,18 +30,15 @@ class Simulation:
     def run(self):
         print("Insert list of numbers, each of them separated by a space:")
         arr = ["  "]
-        # arr += list(map(int, "10 10 20 20 20 20 40 50 50 100".split()))
-        arr = list(map(int, input().split()))
+        arr += list(map(int, input().split()))
         arr += ["  "]
         print("Insert the number you want to find:")
-        # target = 200
         target = int(input())
         print("Insert 0 to simulate lower_bound or 1 to simulate upper_bound:")
-        isUpperBound = bool(input())
+        isUpperBound = bool(int(input()))
+        print("\n\nTarget =", target)
         print()
-        print()
-        print("Target =", target)
-        print()
+
         print("=" * 25, "0", "=" * 25)
 
         left = 1
@@ -79,3 +76,6 @@ class Simulation:
         print(self.rightPointerColor + "  " + self.endColoring + " Right:", right)
         print()
         print()
+
+obj = Simulation()
+obj.run()
