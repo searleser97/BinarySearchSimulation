@@ -19,6 +19,9 @@ Python program to visualize the behavior of upper_bound and lower_bound binary s
 
 <table>
 <tr>
+<th colspan="2">Intuitive Binary Search</th>
+<tr>
+<tr>
 <th>Upper Bound</th>
 <th>Lower Bound</th>
 </tr>
