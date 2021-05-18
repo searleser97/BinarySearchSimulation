@@ -2,6 +2,14 @@
 
 Python program to visualize the behavior of upper_bound and lower_bound binary searches.
 
+# Installation
+
+```shell
+pip install binarysearchsimulation
+```
+
+# Overview
+
 <table>
   <tr>
     <th>Upper Bound</th>
